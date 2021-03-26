@@ -19,12 +19,12 @@ name = "test"
 path = "tests/test.rs"
 
 [dependencies]
-r2d2 = "0.8"
-rusqlite = "0.24"
+r2d2 = "0.8.9"
+rusqlite = { git = "https://github.com/pixell/rusqlite", branch = "next" }
 
 [dev-dependencies]
 tempdir = "0.3"
 
 [dev-dependencies.rusqlite]
-version = "0.24"
+version = { git = "https://github.com/pixell/rusqlite", branch = "next" }
 features = ["trace"]
